@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Contact the Math Resource Center (MRC) for support with homework, exam preparation, and general questions. Our team is here to help with quantitative skills and concepts." />
+    <meta name="keywords" content="Math Resource Center, MRC contact, homework help, exam preparation, quantitative support, business analytics assistance, contact MRC" />
+    <meta name="author" content="Deepali Joshi" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="menu.css" type="text/css"/>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #f0f8ff;
+            font-family: Arial;
+            width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+            color: navy;
+            border: 2px dotted lightblue;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 3%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">MRC</h1>
+    <nav>
+        <a href="index.htm">Home</a>
+        <a href="contact.htm"  class="active">Contact Us</a>
+        <a href="about.htm">About Us</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="credits.htm">Credits</a>
+        <a href="schedule.htm">Schedule</a>
+
+        <!-- MiniTab Dropdown -->
+        <div class="dropdown">
+            <a href="minitab.htm">MiniTab</a>
+            <div class="dropdown-content">
+                <a href="minitab-howtos.htm">How-Tos (Videos)</a>
+                <a href="minitab-commands.htm">Basic Commands</a>
+            </div>
+        </div>
+
+        <!-- R-Studio Dropdown -->
+        <div class="dropdown">
+            <a href="r-studio.htm">R-Studio</a>
+            <div class="dropdown-content">
+                <a href="rstudio-howtos.htm">How-Tos (Videos)</a>
+                <a href="rstudio-tips.htm">Helpful Tips</a>
+            </div>
+        </div>
+
+        <!-- Excel Dropdown -->
+        <div class="dropdown">
+            <a href="excel.htm">Excel</a>
+            <div class="dropdown-content">
+                <a href="excel-howtos.htm">How-Tos (Videos)</a>
+                <a href="excel-formulas.htm">Useful Formulas</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Contact the Math Resource Center</h1>
+    <form method="post" action="">
+        <p>
+            Please Enter Your Name: &nbsp; &nbsp;
+            <input type="text" name="myname" size="20" placeholder="Enter Name" required />
+        </p>
+        <p>
+            Please select your class:
+            <select name="myclass" required>
+                <option value="">Please Select One</option>
+                <option value="FP">Freshperson</option>
+                <option value="SO">Sophomore</option>
+                <option value="JR">Junior</option>
+                <option value="SR">Senior</option>
+            </select>
+        </p>
+        <p>
+            How do you prefer to be contacted?
+            <input type="radio" name="contact_method" value="email" required /> Email &nbsp; &nbsp;
+            <input type="radio" name="contact_method" value="phone" /> Phone
+        </p>
+        <p>
+            Please Enter Your Email/Phone: &nbsp; &nbsp;
+            <input type="text" name="info" size="20"/>
+        </p>
+        <p>
+            Please select the topics you need help with: <br />
+            <input type="checkbox" name="topics" value="Homework" /> Homework Help <br />
+            <input type="checkbox" name="topics" value="Exam Prep" /> Exam Preparation <br />
+            <input type="checkbox" name="topics" value="General Questions" /> General Questions
+        </p>
+        <p>
+            Please enter any other comments: <br />
+            <textarea name="message" cols="40" rows="5" placeholder="Enter your message here" required></textarea>
+        </p>
+        <p>
+            <input type="submit" name="Submit" value="Submit Data" /> &nbsp; &nbsp;
+            <input type="reset" name="Reset" value="Clear Data" />
+        </p>
+    </form>
+
+
+</body>
+
+</html>

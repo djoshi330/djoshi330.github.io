@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Explore essential Excel formulas for business analytics, covering descriptive statistics, financial analysis, and data analysis. Learn to use functions like AVERAGE, NPV, VLOOKUP, and more." />
+    <meta name="keywords" content="Excel formulas, business analytics, Excel for data analysis, financial analysis in Excel, Excel functions, VLOOKUP, NPV, AVERAGE, SUMIF, IF functions in Excel" />
+    <meta name="author" content="Deepali Joshi" />
+    <title>Excel</title>
+    <link rel="stylesheet" href="menu.css" type="text/css"/>
+    <style>
+    header {
+            background-color: #2e86c1;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 20px 20px 50px 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    .content header h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .content header p {
+        margin-top: 8px;
+        font-size: 1.1em;
+    }
+
+    .content .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content section {
+        margin-top: 30px;
+    }
+
+    .content section h2 {
+        font-size: 1.8em;
+        color: #2e86c1;
+        border-bottom: 2px solid #7fb3d5;
+        padding-bottom: 5px;
+    }
+
+    .content .formula {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f9fbfd;
+        border-left: 4px solid #2e86c1;
+        border-radius: 5px;
+    }
+
+    .content .formula h3 {
+        color: #1a5276;
+        font-size: 1.4em;
+        margin: 0;
+    }
+
+    .content .formula p {
+        margin: 10px 0;
+        font-size: 1em;
+        color: #555;
+    }
+
+    .content .example {
+        font-style: italic;
+        color: #333;
+        background-color: #f1f9ff;
+        padding: 8px;
+        border-radius: 5px;
+        margin-top: 8px;
+        font-size: 0.95em;
+    }
+
+    .content code {
+        background-color: #e9f2fc;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-family: Consolas, "Courier New", monospace;
+        color: #1a5276;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">MRC</h1>
+    <nav>
+        <a href="index.htm">Home</a>
+        <a href="contact.htm">Contact Us</a>
+        <a href="about.htm">About Us</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="credits.htm">Credits</a>
+        <a href="schedule.htm">Schedule</a> 
+        <div class="dropdown">
+            <a href="minitab.htm">MiniTab</a>
+            <div class="dropdown-content">
+                <a href="minitab-howtos.htm">How-Tos (Videos)</a>
+                <a href="minitab-commands.htm">Basic Commands</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="r-studio.htm">R-Studio</a>
+            <div class="dropdown-content">
+                <a href="rstudio-howtos.htm">How-Tos (Videos)</a>
+                <a href="rstudio-tips.htm">Helpful Tips</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="excel.htm" class="active">Excel</a>
+            <div class="dropdown-content">
+                <a href="excel-howtos.htm">How-Tos (Videos)</a>
+                <a href="excel-formulas.htm">Useful Formulas</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <header>
+            <h1>Excel Formulas for Business Analytics</h1>
+            <p>Essential formulas for business analytics and data analysis in Excel.</p>
+        </header>
+        
+        <div class="container">
+            <section id="descriptive-statistics">
+                <h2>1. Descriptive Statistics</h2>
+                <div class="formula">
+                    <h3>AVERAGE</h3>
+                    <p>Calculates the mean of a range of numbers.</p>
+                    <div class="example">Formula: <code>=AVERAGE(A2:A10)</code></div>
+                </div>
+                <div class="formula">
+                    <h3>MEDIAN</h3>
+                    <p>Finds the median (middle value) in a range of numbers.</p>
+                    <div class="example">Formula: <code>=MEDIAN(A2:A10)</code></div>
+                </div>
+                <div class="formula">
+                    <h3>STDEV.S</h3>
+                    <p>Calculates the standard deviation for a sample of data.</p>
+                    <div class="example">Formula: <code>=STDEV.S(A2:A10)</code></div>
+                </div>
+                <div class="formula">
+                    <h3>MIN and MAX</h3>
+                    <p>Returns the minimum or maximum value in a range.</p>
+                    <div class="example">Formula: <code>=MIN(A2:A10)</code> or <code>=MAX(A2:A10)</code></div>
+                </div>
+            </section>
+    
+            <section id="financial-analysis">
+                <h2>2. Financial Analysis</h2>
+                <div class="formula">
+                    <h3>NPV</h3>
+                    <p>Calculates the Net Present Value of an investment based on a discount rate and a series of future cash flows.</p>
+                    <div class="example">Formula: <code>=NPV(discount_rate, cash_flows)</code></div>
+                </div>
+                <div class="formula">
+                    <h3>IRR</h3>
+                    <p>Returns the Internal Rate of Return for a series of cash flows.</p>
+                    <div class="example">Formula: <code>=IRR(cash_flows)</code></div>
+                </div>
+                <div class="formula">
+                    <h3>PMT</h3>
+                    <p>Calculates the periodic payment for an annuity based on constant periodic payments and a constant interest rate.</p>
+                    <div class="example">Formula: <code>=PMT(rate, nper, pv)</code></div>
+                </div>
+            </section>
+    
+            <section id="data-analysis">
+                <h2>3. Data Analysis</h2>
+                <div class="formula">
+                    <h3>VLOOKUP</h3>
+                    <p>Searches for a value in the first column of a range and returns a value in the same row from another column.</p>
+                    <div class="example">Formula: <code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></div>
+                </div>
+                <div class="formula">
+                    <h3>INDEX and MATCH</h3>
+                    <p>Combines INDEX and MATCH for a more flexible lookup.</p>
+                    <div class="example">Formula: <code>=INDEX(return_range, MATCH(lookup_value, lookup_range, 0))</code></div>
+                </div>
+                <div class="formula">
+                    <h3>IF</h3>
+                    <p>Returns one value if a condition is true, and another value if false.</p>
+                    <div class="example">Formula: <code>=IF(condition, value_if_true, value_if_false)</code></div>
+                </div>
+                <div class="formula">
+                    <h3>SUMIF</h3>
+                    <p>Sums values in a range based on a condition.</p>
+                    <div class="example">Formula: <code>=SUMIF(range, criteria, [sum_range])</code></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

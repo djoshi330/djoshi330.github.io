@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Welcome to the Math Resource Center (MRC) website. Learn about our mission to support students with quantitative skills for business applications, including courses like AQM1000 and AQM2000." />
+    <meta name="keywords" content="Math Resource Center, MRC, business math support, quantitative skills, AQM1000, AQM2000, math tutoring, business analytics" />
+    <meta name="author" content="Deepali Joshi" />
+    <title>MRC Website - Home</title>
+    <link rel="stylesheet" href="menu.css" type="text/css"/>
+    <style type="text/css">
+        h3{
+            text-align: center;
+        }
+        img#hotmap{
+            display: block;
+            margin: 0 auto;
+        }
+        .mission-container {
+            background-color: #fff;
+            border: 2px solid rgb(30, 100, 212);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .mission-title {
+            font-size: 24px;
+            font-weight: bold;
+            color:rgb(30, 100, 212);
+            margin-bottom: 10px;
+        }
+        .mission-text {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">MRC</h1>
+    <nav>
+        <a href="index.htm" class="active">Home</a>
+        <a href="contact.htm">Contact Us</a>
+        <a href="about.htm">About Us</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="credits.htm">Credits</a>
+        <a href="schedule.htm">Schedule</a>
+
+        <!-- MiniTab Dropdown -->
+        <div class="dropdown">
+            <a href="minitab.htm">MiniTab</a>
+            <div class="dropdown-content">
+                <a href="minitab-howtos.htm">How-Tos (Videos)</a>
+                <a href="minitab-commands.htm">Basic Commands</a>
+            </div>
+        </div>
+
+        <!-- R-Studio Dropdown -->
+        <div class="dropdown">
+            <a href="r-studio.htm">R-Studio</a>
+            <div class="dropdown-content">
+                <a href="rstudio-howtos.htm">How-Tos (Videos)</a>
+                <a href="rstudio-tips.htm">Helpful Tips</a>
+            </div>
+        </div>
+
+        <!-- Excel Dropdown -->
+        <div class="dropdown">
+            <a href="excel.htm">Excel</a>
+            <div class="dropdown-content">
+                <a href="excel-howtos.htm">How-Tos (Videos)</a>
+                <a href="excel-formulas.htm">Useful Formulas</a>
+            </div>
+        </div>
+    </nav>
+
+    <audio autoplay loop>
+        <source src="TestVideoByFisk-1.mp4" type="audio/mpeg">
+    </audio>
+    <div class="mission-container">
+        <div class="mission-title">Mission Statement:</div>
+        <div class="mission-text">
+            To promote the development and enhancement of concepts and skills essential for an understanding of quantitative applications in business and provide assistance and resources to help students take the required quantitative courses AQM1000 and AQM2000.
+        </div>
+    </div>
+    <h3>The MRC is located in the Horn Computer Center... hover over for more info:</h3>
+    <map name="horn" id="horn">
+        <area shape="rect" coords="110, 126, 209, 228" href="https://www.babson.edu/about/our-leaders-and-scholars/faculty-and-academic-divisions/math-and-science/math-resource-center/" alt="Horn"/>
+        <area shape="rect" coords="285, 273, 215, 152" href="https://www.babson.edu/health-and-wellness/advising-and-support/horn-learning-centers/" alt="Horn"/>
+    </map>
+    <img id="hotmap" src="map.jpg" alt="Map" title="Horn Library" usemap="#horn"/>
+
+</body>
+
+</html>

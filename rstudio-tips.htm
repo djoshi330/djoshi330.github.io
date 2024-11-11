@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Discover essential R code tips for business analytics. Learn to load data, create visualizations, fit models, and analyze data with foundational R code snippets." />
+    <meta name="keywords" content="R code tips, R programming, business analytics in R, data analysis with R, R data visualization, R code for data science, R linear models" />
+    <meta name="author" content="Deepali Joshi" />
+    <title>MRC Website - Home</title>
+    <link rel="stylesheet" href="menu.css" type="text/css"/>
+    <style type="text/css">
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2e86c1;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 20px 20px 50px 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .tip {
+            background-color: #f0f8ff;
+            border: 1px solid #d1e7f3;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .tip:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tip h3 {
+            color: #2e86c1;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .tip p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        .tip code {
+            background-color: white;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">MRC</h1>
+    <nav>
+        <a href="index.htm">Home</a>
+        <a href="contact.htm">Contact Us</a>
+        <a href="about.htm">About Us</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="credits.htm">Credits</a>
+        <a href="schedule.htm">Schedule</a> 
+        <!-- MiniTab Dropdown -->
+        <div class="dropdown">
+            <a href="minitab.htm">MiniTab</a>
+            <div class="dropdown-content">
+                <a href="minitab-howtos.htm">How-Tos (Videos)</a>
+                <a href="minitab-commands.htm">Basic Commands</a>
+            </div>
+        </div>
+        <!-- R-Studio Dropdown -->
+        <div class="dropdown">
+            <a href="r-studio.htm"  class="active">R-Studio</a>
+            <div class="dropdown-content">
+                <a href="rstudio-howtos.htm">How-Tos (Videos)</a>
+                <a href="rstudio-tips.htm">Helpful Tips</a>
+            </div>
+        </div>
+        <!-- Excel Dropdown -->
+        <div class="dropdown">
+            <a href="excel.htm">Excel</a>
+            <div class="dropdown-content">
+                <a href="excel-howtos.htm">How-Tos (Videos)</a>
+                <a href="excel-formulas.htm">Useful Formulas</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Essential R Code Tips for Business Analytics</h1>
+        <p>Master R with these foundational code snippets for data analysis.</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="tip">
+                <h3>1. Loading Data Frames</h3>
+                <p>Loads a dataset from a CSV file into a data frame.</p>
+                <code>data <- read.csv("file_path.csv")</code>
+            </div>
+
+            <div class="tip">
+                <h3>2. Viewing the First Few Rows</h3>
+                <p>Displays the first six rows of the data frame.</p>
+                <code>head(data)</code>
+            </div>
+
+            <div class="tip">
+                <h3>3. Splitting Data into Train and Test Sets</h3>
+                <p>Divides data into training (70%) and testing (30%) sets.</p>
+                <code>
+                    set.seed(123)<br>
+                    train_index <- sample(1:nrow(data), 0.7 * nrow(data))<br>
+                    train_data <- data[train_index, ]<br>
+                    test_data <- data[-train_index, ]
+                </code>
+            </div>
+
+            <div class="tip">
+                <h3>4. Fitting a Linear Model</h3>
+                <p>Fits a linear regression model with `y` as the dependent variable and `x` as the independent variable.</p>
+                <code>model <- lm(y ~ x, data = data)</code>
+            </div>
+
+            <div class="tip">
+                <h3>5. Scatter Plot</h3>
+                <p>Creates a scatter plot of `y` vs. `x`.</p>
+                <code>plot(data$x, data$y, main = "Scatter Plot", xlab = "X Variable", ylab = "Y Variable")</code>
+            </div>
+
+            <div class="tip">
+                <h3>6. Fitting a Generalized Linear Model (GLM)</h3>
+                <p>Fits a GLM; commonly used for binary outcomes.</p>
+                <code>model <- glm(y ~ x, family = binomial, data = data)</code>
+            </div>
+
+            <div class="tip">
+                <h3>7. Plotting a Histogram</h3>
+                <p>Generates a histogram of the `x` variable.</p>
+                <code>hist(data$x, main = "Histogram of X", xlab = "X Variable", col = "lightblue")</code>
+            </div>
+
+            <div class="tip">
+                <h3>8. Creating a Bar Plot</h3>
+                <p>Creates a bar plot of frequencies for a categorical variable.</p>
+                <code>barplot(table(data$category), main = "Bar Plot of Categories", xlab = "Category", ylab = "Frequency")</code>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

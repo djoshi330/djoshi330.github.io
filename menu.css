@@ -1,0 +1,61 @@
+nav {
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+nav a.active {
+    text-decoration: underline; 
+    color: darkblue; 
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    min-width: 150px;
+    text-align: left;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1#heading{
+    background-image: url("math.jpg");
+    background-repeat: repeat-x;
+    background-size: auto 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Navigate the Math Resource Center (MRC) website with our comprehensive sitemap. Find pages on MiniTab, R-Studio, Excel tutorials, and support resources." />
+    <meta name="keywords" content="MRC sitemap, Math Resource Center navigation, MRC website map, MiniTab tutorials, R-Studio tips, Excel formulas, MRC resources" />
+    <meta name="author" content="Deepali Joshi" />
+    <title>Sitemap</title>
+    <link rel="stylesheet" href="menu.css" type="text/css"/>
+</head>
+<style>
+h1, h3 {
+    text-align: center;
+}
+
+.sitemap-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border: 2px solid #7fb3d5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Center-align the main sitemap list */
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sitemap-list li {
+    margin: 4px 0;
+}
+
+/* Link styling */
+.sitemap-list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2e86c1;
+    transition: color 0.3s ease;
+}
+
+.sitemap-list a:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+/* Nested list styling */
+.sitemap-list ul {
+    list-style-type: circle;
+    padding-left: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sitemap-list ul li {
+    margin: 5px 0;
+}
+
+.sitemap-list ul a {
+    font-weight: normal;
+}
+
+
+</style>
+
+<body>
+    <h1 id="heading">MRC</h1>
+    <nav>
+        <a href="index.htm">Home</a>
+        <a href="contact.htm">Contact Us</a>
+        <a href="about.htm">About Us</a>
+        <a href="sitemap.htm" class="active">Sitemap</a>
+        <a href="credits.htm">Credits</a>
+        <a href="schedule.htm">Schedule</a> 
+        <!-- MiniTab Dropdown -->
+        <div class="dropdown">
+            <a href="minitab.htm">MiniTab</a>
+            <div class="dropdown-content">
+                <a href="minitab-howtos.htm">How-Tos (Videos)</a>
+                <a href="minitab-commands.htm">Basic Commands</a>
+            </div>
+        </div>
+        <!-- R-Studio Dropdown -->
+        <div class="dropdown">
+            <a href="r-studio.htm">R-Studio</a>
+            <div class="dropdown-content">
+                <a href="rstudio-howtos.htm">How-Tos (Videos)</a>
+                <a href="rstudio-tips.htm">Helpful Tips</a>
+            </div>
+        </div>
+        <!-- Excel Dropdown -->
+        <div class="dropdown">
+            <a href="excel.htm">Excel</a>
+            <div class="dropdown-content">
+                <a href="excel-howtos.htm">How-Tos (Videos)</a>
+                <a href="excel-formulas.htm">Useful Formulas</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Sitemap</h1>
+    <div class="sitemap-container">
+        <ul class="sitemap-list">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+            <li><a href="about.htm">About Us</a></li>
+            <li><a href="sitemap.htm">Sitemap</a></li>
+            <li><a href="credits.htm">Credits</a></li>
+            <li><a href="schedule.htm">Schedule</a> </li>
+            <li><a href="minitab.htm">MiniTab</a>
+                <ul>
+                    <li><a href="minitab-howtos.htm">How-Tos (Videos)</a></li>
+                    <li><a href="minitab-commands.htm">Commands</a></li>
+                </ul>
+            </li>
+            <li><a href="r-studio.htm">R-Studio</a>
+                <ul>
+                    <li><a href="rstudio-howtos.htm">How-Tos (Videos)</a></li>
+                    <li><a href="rstudio-tips.htm">Helpful Tips</a></li>
+                </ul>
+            </li>
+            <li><a href="excel.htm">Excel</a>
+                <ul>
+                    <li><a href="excel-howtos.htm">How-Tos (Videos)</a></li>
+                    <li><a href="excel-formulas.htm">Formulas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
